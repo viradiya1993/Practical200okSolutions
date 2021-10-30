@@ -1,0 +1,27 @@
+.row {
+    display: flex;
+    flex-wrap: wrap;
+ }
+ 
+ .row > div[class*='col-'] {
+   display: flex;
+   flex:1 0 auto;
+ }
+
+ :host {
+  font-family: Lato;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button{
+  margin: 10px 0;
+  padding: 5px;
+  width: 150px;
+  border-radius:15px;
+  border: none;
+  background-color: #ffca28;
+  cursor: pointer;
+}

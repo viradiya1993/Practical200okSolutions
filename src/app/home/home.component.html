@@ -1,0 +1,11 @@
+<h1>Weolcome {{role}}!</h1>
+
+
+
+	<ol>
+		<ng-container *ngFor="let chunk of names.chunks; let i = index">
+			<li *ngFor="let name of chunk">{{name}}</li>
+			<button *ngIf="i === names.length - 1" (click)="loadMore()">Load more</button>
+		</ng-container>
+	</ol>
+
